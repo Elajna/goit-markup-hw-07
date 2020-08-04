@@ -1,0 +1,35 @@
+$main-width: 1200px;
+$hero-width: 1600px;
+
+body {
+  color: $text-color;
+  background-color: $primary-white-color;
+  letter-spacing: 0.03em;
+
+  .container {
+    width: $main-width;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.section {
+  margin-bottom: 94px;
+  &-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: $title-text-color;
+    font-family: $main-font;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+  }
+}

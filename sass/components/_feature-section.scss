@@ -1,0 +1,83 @@
+.feature {
+  display: flex;
+  justify-content: space-between;
+
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: $title-text-color;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+
+  &-title {
+    @extend %visually-hidden;
+  }
+
+  .title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: $title-text-color;
+    font-family: $main-font;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+
+  .text {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: 0.03em;
+  }
+}
+
+.feature-list {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &::before {
+    display: block;
+    width: 270px;
+    height: 120px;
+    content: '';
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f5f4fa;
+  }
+}
+
+.item.antenna::before {
+  background-image: url(../img/antenna1.svg);
+}
+
+.item.clock::before {
+  background-image: url(../img/clock1.svg);
+}
+
+.item.diagram::before {
+  background-image: url(../img/diagram1.svg);
+}
+
+.item.astronaut::before {
+  background-image: url(../img/astronaut1.svg);
+}
+
+.figure {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
