@@ -1,0 +1,12 @@
+.portfolio {
+  margin-top: 120px;
+  margin-bottom: 100px;
+
+  &-list {
+    padding-bottom: 33px;
+  }
+}
+
+.portfolio-title {
+  @extend %visually-hidden;
+}

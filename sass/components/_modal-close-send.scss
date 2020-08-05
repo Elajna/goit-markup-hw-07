@@ -1,0 +1,46 @@
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-image: url(../img/close-black.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-image: url(../img/close.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.modal-send {
+  display: block;
+  min-width: 200px;
+  height: 50px;
+
+  margin-right: 164px;
+  margin-left: 164px;
+  padding: 10px 55px;
+  border-radius: 4px;
+
+  border: 1px solid transparent;
+
+  color: $primary-white-color;
+  background-color: $accent-color;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: $button-send-shadow;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $second-accent-color;
+  }
+}

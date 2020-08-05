@@ -902,7 +902,7 @@ figcaption {
   background-color: var(--accent-color);
 }
 
-.join-icon {
+.icon {
   width: 20px;
   height: 20px;
   fill: var(--primary-white-color);
